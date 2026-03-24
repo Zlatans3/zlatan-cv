@@ -9,7 +9,7 @@ export default function About() {
         </div>
         <div className="text-card">
           <h2>Contact</h2>
-          <p>Email: [Your Email]</p>
+          <p>Email: Zeefmusic</p>
           <p>Phone: [Your Phone]</p>
           <p>Location: Roskilde, Denmark</p>
         </div>
