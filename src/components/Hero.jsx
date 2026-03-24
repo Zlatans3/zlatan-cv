@@ -1,3 +1,5 @@
+import profilePhoto from '../assets/cv-zlatan.jpg'
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -11,7 +13,7 @@ export default function Hero() {
         <a className="hero-button" href="#experience">View Career</a>
       </div>
       <div className="photo-wrap">
-        <img className="photo" src="/assets/cv-zlatan.jpg" alt="Zlatan Stadler headshot" />
+        <img className="photo" src={profilePhoto} alt="Zlatan Stadler headshot" />
         <div className="photo-badge">
           <span className="badge-years">3+ Years</span>
           <span className="badge-label">Industry experience</span>

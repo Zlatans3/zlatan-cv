@@ -1,4 +1,6 @@
 import GitHubButton from './GitHubButton'
+import okAppImg from '../assets/ok-app-display.jpg'
+import portfolioImg from '../assets/SCR-20260306-ttkt.jpeg'
 
 export default function Projects() {
   return (
@@ -13,7 +15,7 @@ export default function Projects() {
       <div className="project-grid">
         <div className="project-card">
           <div className="project-img-wrap">
-            <img src="/assets/ok app display.jpg" alt="OK Bilist" />
+            <img src={okAppImg} alt="OK Bilist" />
           </div>
           <h3>OK Bilist</h3>
           <p>Official motorist application for OK.dk. High-performance station search and loyalty integration.</p>
@@ -24,7 +26,7 @@ export default function Projects() {
         </div>
         <div className="project-card">
           <div className="project-img-wrap">
-            <img src="/assets/SCR-20260306-ttkt.jpeg" alt="Compose Portfolio Engine" />
+            <img src={portfolioImg} alt="Compose Portfolio Engine" />
           </div>
           <h3>Compose Portfolio Engine</h3>
           <p>A custom-built library for generating dynamic Android portfolios directly from JSON schemas.</p>
