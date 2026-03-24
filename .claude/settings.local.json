@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p public)",
+      "Bash(cp -r assets public/assets)",
+      "Bash(npm install:*)",
+      "Bash(rm -rf node_modules package-lock.json)",
+      "Bash(npm uninstall:*)",
+      "Bash(curl -s http://localhost:5173/src/main.jsx)",
+      "Bash(curl -s http://localhost:5173/src/App.jsx)",
+      "Bash(curl:*)"
+    ]
+  }
+}

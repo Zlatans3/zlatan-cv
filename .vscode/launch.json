@@ -8,8 +8,9 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "/Users/zlatanstadler/Desktop/zlatan cv html /index.html"
+            "name": "Launch Vite Dev Server",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}/src"
         }
     ]
 }
