@@ -21,7 +21,7 @@ export default function Projects() {
         </div>
       </FadeIn>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {projects.map((project, i) => (
+        {projects.slice(0, 2).map((project, i) => (
           <FadeIn key={project.title} delay={i * 120}>
             <ProjectCard {...project} />
           </FadeIn>
