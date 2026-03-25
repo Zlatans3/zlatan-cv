@@ -1,34 +1,35 @@
+import FadeIn from './FadeIn'
+
+const skillGroups = [
+  { title: 'Programming', pills: ['Kotlin', 'Java', 'SQL', 'C#'] },
+  { title: 'Frameworks', pills: ['Jetpack Compose', 'Android SDK', 'KMP'] },
+  { title: 'Architecture', pills: ['MVVM', 'MVI', 'Clean Architecture'] },
+  { title: 'Tools', pills: ['Android Studio', 'Git', 'Figma', 'CI/CD'] },
+]
+
 export default function Skills() {
   return (
-    <section className="section" id="tech">
-      <h2>Technical Arsenal</h2>
-      <div className="skill-grid">
-        <div className="skill-card">
-          <h3>Programming</h3>
-          <span className="tech-pill">Kotlin</span>
-          <span className="tech-pill">Java</span>
-          <span className="tech-pill">SQL</span>
-          <span className="tech-pill">C#</span>
-        </div>
-        <div className="skill-card">
-          <h3>Frameworks</h3>
-          <span className="tech-pill">Jetpack Compose</span>
-          <span className="tech-pill">Android SDK</span>
-          <span className="tech-pill">KMP</span>
-        </div>
-        <div className="skill-card">
-          <h3>Architecture</h3>
-          <span className="tech-pill">MVVM</span>
-          <span className="tech-pill">MVI</span>
-          <span className="tech-pill">Clean Architecture</span>
-        </div>
-        <div className="skill-card">
-          <h3>Tools</h3>
-          <span className="tech-pill">Android Studio</span>
-          <span className="tech-pill">Git</span>
-          <span className="tech-pill">Figma</span>
-          <span className="tech-pill">CI/CD</span>
-        </div>
+    <section className="mb-16" id="tech">
+      <FadeIn>
+        <h2 className="text-2xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-200">
+          Technical Arsenal
+        </h2>
+      </FadeIn>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {skillGroups.map(({ title, pills }, i) => (
+          <FadeIn key={title} delay={i * 80}>
+            <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm h-full">
+              <h3 className="text-sm font-bold text-slate-900 mb-3">{title}</h3>
+              <div className="flex flex-wrap gap-2">
+                {pills.map(pill => (
+                  <span key={pill} className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-blue-50 text-blue-700 border border-blue-100">
+                    {pill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </FadeIn>
+        ))}
       </div>
     </section>
   )
