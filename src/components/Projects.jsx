@@ -14,7 +14,7 @@ export default function Projects() {
           </div>
           <Link
             to="/projects"
-            className="text-xs font-bold tracking-widest uppercase text-blue-600 border-b border-blue-600 pb-0.5 hover:opacity-70 transition-opacity mt-1"
+            className="text-xs font-bold tracking-widest uppercase text-teal-600 border-b border-teal-600 pb-0.5 hover:opacity-70 transition-opacity mt-1"
           >
             View More
           </Link>

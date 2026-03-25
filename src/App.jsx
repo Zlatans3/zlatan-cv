@@ -10,15 +10,17 @@ import AllProjects from './pages/AllProjects'
 
 function Home() {
   return (
-    <div className="max-w-5xl mx-auto px-6 py-6">
+    <>
       <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Education />
-      <Footer />
-    </div>
+      <div className="max-w-5xl mx-auto px-6 py-6">
+        <About />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Education />
+        <Footer />
+      </div>
+    </>
   )
 }
 

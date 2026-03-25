@@ -13,12 +13,12 @@ export default function Experience() {
           {/* Active entry */}
           <div className="flex gap-7">
             <div className="flex flex-col items-center">
-              <div className="w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100 flex-shrink-0 mt-1" />
+              <div className="w-4 h-4 rounded-full bg-teal-600 ring-4 ring-teal-100 flex-shrink-0 mt-1" />
               <div className="w-px flex-1 bg-slate-200 mt-2 mb-0" />
             </div>
             <div className="pb-12">
               <div className="flex items-center gap-3 mb-1">
-                <span className="text-xs font-bold tracking-widest uppercase text-blue-600">2022 — Present</span>
+                <span className="text-xs font-bold tracking-widest uppercase text-teal-600">2022 — Present</span>
                 <span className="text-sm text-slate-400">· Framna</span>
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Android Developer</h3>
@@ -32,7 +32,7 @@ export default function Experience() {
                   { label: 'CI/CD', text: 'Set up GitHub Actions pipelines; integrated Firebase Analytics & Crashlytics.' },
                 ].map(({ label, text }) => (
                   <li key={label} className="flex gap-3 text-sm text-slate-700 leading-relaxed">
-                    <span className="mt-0.5 w-5 h-5 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center flex-shrink-0">✓</span>
+                    <span className="mt-0.5 w-5 h-5 rounded-full bg-teal-600 text-white text-xs flex items-center justify-center flex-shrink-0">✓</span>
                     <span><strong>{label}:</strong> {text}</span>
                   </li>
                 ))}

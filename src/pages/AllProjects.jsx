@@ -10,7 +10,7 @@ export default function AllProjects() {
         <div className="flex items-center gap-4 mb-8">
           <Link
             to="/"
-            className="text-blue-600 hover:opacity-70 transition-opacity p-3 -m-3"
+            className="text-teal-600 hover:opacity-70 transition-opacity p-3 -m-3"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
