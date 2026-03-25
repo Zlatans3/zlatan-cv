@@ -1,4 +1,3 @@
-import GitHubButton from './GitHubButton'
 import okAppImg from '../assets/ok-app-display.jpg'
 import portfolioImg from '../assets/SCR-20260306-ttkt.jpeg'
 
@@ -10,7 +9,7 @@ export default function Projects() {
           <h2>Selected Projects</h2>
           <p className="section-sub">Professional and side explorations.</p>
         </div>
-        <GitHubButton url="https://github.com" />
+        <a className="hero-button" href="#projects">View More</a>
       </div>
       <div className="project-grid">
         <div className="project-card">

@@ -10,7 +10,7 @@ export default function Hero() {
           Crafting seamless, performance-driven mobile experiences with Kotlin and Jetpack Compose.
           Focused on architectural precision and editorial design standards.
         </p>
-        <a className="hero-button" href="#experience">View Career</a>
+        <a className="hero-button" href="https://github.com/zlatanstadler" target="_blank" rel="noopener noreferrer">View GitHub</a>
       </div>
       <div className="photo-wrap">
         <img className="photo" src={profilePhoto} alt="Zlatan Stadler headshot" />
