@@ -92,11 +92,7 @@ const projects = [
         },
         {
           heading: 'Implementation',
-          body: 'The feature was built using XML-based views (the codebase predated a Compose migration). We integrated with PureGym\'s backend via Retrofit to fetch member access tokens, and used MLKit for QR code scanning as a fallback access method.',
-        },
-        {
-          heading: 'Outcome',
-          body: 'The feature launched across all Danish PureGym locations and was received well by members. The phased rollout approach meant zero disruption to access during the transition.',
+          body: 'The feature was built using XML-based views (the codebase predated a Compose migration). We integrated with PureGym\'s backend via Retrofit to fetch member access tokens, and used MLKit for QR code scanning.',
         },
       ],
     },
