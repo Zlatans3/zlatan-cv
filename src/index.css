@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Organic blob shape — not expressible in Tailwind */

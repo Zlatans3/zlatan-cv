@@ -1,5 +1,15 @@
 import FadeIn from './FadeIn'
 
+// Renders **bold** markers within a string
+function Bold({ text, active }) {
+  const parts = text.split(/\*\*(.*?)\*\*/g)
+  return parts.map((part, i) =>
+    i % 2 === 1
+      ? <strong key={i} className={active ? 'text-slate-900 font-semibold' : 'text-slate-500 font-semibold'}>{part}</strong>
+      : part
+  )
+}
+
 const roles = [
   {
     period: '2024 — Present',
@@ -7,10 +17,10 @@ const roles = [
     title: 'Android Developer',
     description: 'Android development has become an everyday practice. Focus has shifted towards deepening craft and refining established practices.',
     bullets: [
-      'Daily development of feature requirements across live production apps',
-      'More involvement in feature planning and shaping technical direction',
-      'Expanding knowledge in the Kotlin ecosystem',
-      'Architecture & best practices: MVVM/MVI patterns and Clean Architecture to ensure maintainability',
+      'Daily development of **feature requirements** across live production apps',
+      'More involvement in **feature planning** and shaping technical direction',
+      'Expanding knowledge in the **Kotlin** ecosystem',
+      'Architecture & best practices: **MVVM/MVI patterns** and **Clean Architecture** to ensure maintainability',
     ],
     active: true,
   },
@@ -20,10 +30,10 @@ const roles = [
     title: 'Junior Android Developer',
     description: 'Joined the OK A.M.B.A Billist and Hjem App team, gaining experience in everyday development tasks on live consumer products.',
     bullets: [
-      'Building UI using mainly Jetpack Compose',
+      'Building UI using mainly **Jetpack Compose**',
       'Gradually increased complexity of daily tasks and ownership',
-      'Setting up and maintaining endpoints and data sets using Retrofit and Gson',
-      'Dependency injection using Hilt/Dagger',
+      'Setting up and maintaining endpoints and data sets using **Retrofit** and **Gson**',
+      'Dependency injection using **Hilt/Dagger**',
     ],
     active: false,
   },
@@ -33,9 +43,9 @@ const roles = [
     title: 'Intern Android Developer',
     description: 'Learned to handle overviews of a project and got an introduction to professional Android development workflows.',
     bullets: [
-      'Introduction to Jira and Confluence for project and task management',
-      'Git workflows and basic Kotlin libraries',
-      'Worked on a larger scale Android project for Solar Danmark A/S',
+      'Introduction to **Jira** and **Confluence** for project and task management',
+      '**Git** workflows and basic **Kotlin** libraries',
+      'Worked on a larger scale Android project for **Solar Danmark A/S**',
     ],
     active: false,
   },
@@ -84,7 +94,9 @@ export default function Experience() {
                   {role.bullets.map((b) => (
                     <li key={b} className="flex gap-3 text-sm leading-relaxed">
                       <span className={`mt-0.5 w-5 h-5 rounded-full text-xs flex items-center justify-center flex-shrink-0 ${role.active ? 'bg-teal-600 text-white' : 'bg-slate-200 text-slate-400'}`}>✓</span>
-                      <span className={role.active ? 'text-slate-700' : 'text-slate-400'}>{b}</span>
+                      <span className={role.active ? 'text-slate-700' : 'text-slate-400'}>
+                        <Bold text={b} active={role.active} />
+                      </span>
                     </li>
                   ))}
                 </ul>

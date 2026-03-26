@@ -8,10 +8,10 @@ export default function About() {
           <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm h-full">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">About Me</h2>
             <p className="text-slate-500 leading-relaxed mb-3">
-              Highly skilled Android Developer with over 3 years of experience at Framna, specializing in Kotlin and modern Jetpack Compose architectures.
+              I'm an Android developer who's been at Framna since starting out as an intern in 2022. Over the years I've gone from picking up my first real tasks to taking ownership of full features — working on apps like OK Bilist and helping PureGym move their gym access system into the app.
             </p>
             <p className="text-slate-500 leading-relaxed">
-              My approach combines technical rigor with a deep understanding of user behavior. I pride myself on building robust, scalable applications that don't just function—they delight.
+              My background is in Computer Science from Zealand Roskilde, and I've been working mainly with Kotlin and Jetpack Compose. I care about writing code that's easy to maintain and feels good to use — and when I'm not on the job, I still end up building things, usually to solve some small problem in my own life.
             </p>
           </div>
         </FadeIn>

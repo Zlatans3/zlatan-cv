@@ -22,8 +22,8 @@ export default function Hero() {
             Zlatan Stadler
           </h1>
           <p className="text-teal-100 text-lg leading-relaxed max-w-md">
-            Crafting seamless, performance-driven mobile experiences with Kotlin and Jetpack Compose.
-            Focused on architectural precision and editorial design standards.
+            Android developer based in Denmark. I work mostly in Kotlin and Jetpack Compose,
+            building apps that real people use every day.
           </p>
           <GitHubButton url="https://github.com/zlatanstadler" className="mt-8 px-6 py-3" />
         </div>
