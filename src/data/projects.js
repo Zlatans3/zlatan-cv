@@ -22,10 +22,6 @@ const projects = [
           heading: 'Rolling Out the Changes',
           body: 'Once the library was in place the real work began: going through the app screen by screen and applying the updated tokens. Some components needed more than a colour swap — the new identity brought changes to corner radii, spacing rhythm and icon style that touched a lot of surfaces. Jetpack Compose\'s theming system made it manageable to apply changes consistently without duplicating logic.',
         },
-        {
-          heading: 'Keeping It Consistent',
-          body: 'One of the trickier parts was making sure the rebrand felt coherent across both the Hjem and Bilist apps, which share some underlying patterns but are maintained separately. I worked closely with the design team to flag inconsistencies early and keep the two apps aligned throughout the rollout.',
-        },
       ],
     },
   },
@@ -59,23 +55,23 @@ const projects = [
     img: okAppImg,
     alt: 'OK Bilist',
     title: 'OK Bilist',
-    desc: 'Official motorist application for OK A.M.B.A. At my time in Framna, I was responsible for the development of the OK Bilist app. I worked on a variety of features, including the integration of the app with the company\'s backend systems, and the implementation of new features such as front page and a redesigned refuel flow. read the case study from Framna here!',
-    tags: ['Compose', 'Retrofit'],
+    desc: 'Official motorist application for OK A.M.B.A. Contributed across multiple releases — optimising features, adapting the UI for a range of screen sizes, and helping move the codebase from XML towards fully Compose-based development.',
+    tags: ['Compose', 'XML', 'Retrofit'],
     url: 'http://framna.com/cases/ok',
     article: {
-      intro: 'OK Bilist is the official motorist app for OK A.M.B.A., one of Denmark\'s largest energy companies. I worked on this project during my time at Framna.',
+      intro: 'OK Bilist is the official motorist app for OK A.M.B.A., one of Denmark\'s largest energy companies. I contributed to the app across multiple releases during my time at Framna.',
       sections: [
         {
-          heading: 'My Role',
-          body: 'I was the lead Android developer on the project, responsible for architecting and implementing key features in Jetpack Compose. I collaborated closely with designers and the backend team at OK to deliver a seamless refuelling experience.',
+          heading: 'My Contribution',
+          body: 'I was part of the team working on the app across several release cycles, picking up tasks that ranged from UI fixes to feature work. My focus was on making sure things worked well and felt right — both on newer devices and on older screens that needed a bit more attention.',
         },
         {
-          heading: 'Refuel Flow Redesign',
-          body: 'One of the core contributions was a complete redesign of the refuel flow. The previous flow was spread across multiple screens with unnecessary friction. We consolidated it into a guided, single-purpose experience with real-time price updates and station availability via Retrofit.',
+          heading: 'UI Optimisation',
+          body: 'A good chunk of the work was making sure the UI held up across different screen sizes and resolutions. That meant going through existing screens, identifying where things broke or felt off, and making adjustments that worked reliably across the range of Android devices OK Bilist runs on.',
         },
         {
-          heading: 'Tech & Architecture',
-          body: 'The app is built entirely in Jetpack Compose with a clean MVVM architecture. Network calls are handled through Retrofit with a custom interceptor for OK\'s auth tokens. We also introduced a shared ViewModel pattern across the refuel flow to reduce state management complexity.',
+          heading: 'XML to Compose Migration',
+          body: 'When I joined, the codebase was XML-based. Over time we bridged XML activities with Compose, gradually introducing it where it made sense. By the time of the more recent releases, all new features were being written fully in Compose — so part of the work was helping establish and follow that direction as the codebase modernised.',
         },
       ],
     },
