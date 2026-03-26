@@ -1,6 +1,6 @@
-export default function ProjectCard({ img, alt, title, desc, tags, url }) {
+export default function ProjectCard({ img, alt, title, desc, tags, onClick }) {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer" className="group block">
+    <button onClick={onClick} className="group block text-left w-full cursor-pointer">
       <div className="w-full h-72 overflow-hidden rounded-2xl bg-slate-900 mb-4 group-hover:opacity-90 transition-opacity">
         <img src={img} alt={alt} className="w-full h-full object-cover object-top" />
       </div>
@@ -13,6 +13,6 @@ export default function ProjectCard({ img, alt, title, desc, tags, url }) {
           </span>
         ))}
       </div>
-    </a>
+    </button>
   )
 }

@@ -11,7 +11,11 @@
       "Bash(curl:*)",
       "Read(//Users/zlatanstadler/Desktop/zlatan cv html /assets/**)",
       "Read(//Users/zlatanstadler/Desktop/zlatan cv html /public/**)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Read(//Users/zlatanstadler/Desktop/zlatan cv html /src/data/**)",
+      "Read(//Users/zlatanstadler/Desktop/zlatan cv html /src/components/**)",
+      "Bash(cd ~/Desktop/\"zlatan cv html\")",
+      "Bash(cd ~/Desktop/\"zlatan cv html \")"
     ]
   }
 }
