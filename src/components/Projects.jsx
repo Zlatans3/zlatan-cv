@@ -19,9 +19,12 @@ export default function Projects() {
             </div>
             <Link
               to="/projects"
-              className="text-xs font-bold tracking-widest uppercase text-teal-600 border-b border-teal-600 pb-0.5 hover:opacity-70 transition-opacity mt-1"
+              className="flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase text-teal-600 border border-teal-600 rounded-full px-4 py-1.5 hover:bg-teal-600 hover:text-white transition-colors mt-1"
             >
               View More
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
             </Link>
           </div>
         </FadeIn>

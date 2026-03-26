@@ -25,10 +25,10 @@ const WrenchIcon = () => (
 )
 
 const skillGroups = [
-  { title: 'Programming', icon: CodeIcon, pills: ['Kotlin', 'Java', 'SQL', 'C#'] },
-  { title: 'Frameworks', icon: LayersIcon, pills: ['Jetpack Compose', 'Android SDK', 'KMP'] },
-  { title: 'Architecture', icon: BlueprintIcon, pills: ['MVVM', 'MVI', 'Clean Architecture'] },
-  { title: 'Tools', icon: WrenchIcon, pills: ['Android Studio', 'Git', 'Figma', 'CI/CD'] },
+  { title: 'Programming', icon: CodeIcon, pills: ['Kotlin', 'Java', 'JavaScript', 'SQL', 'C#', '.NET'] },
+  { title: 'Frameworks', icon: LayersIcon, pills: ['Jetpack Compose', 'Android SDK', 'Retrofit', 'Hilt/Dagger', 'Firebase', 'Vue.js', 'React', 'Axios', 'KMP'] },
+  { title: 'Architecture', icon: BlueprintIcon, pills: ['MVVM', 'MVI', 'Clean Architecture', 'SCRUM', 'XP'] },
+  { title: 'Tools', icon: WrenchIcon, pills: ['Android Studio', 'Git', 'Figma', 'CI/CD', 'Jira', 'Confluence', 'Azure DevOps'] },
 ]
 
 export default function Skills() {
@@ -36,7 +36,7 @@ export default function Skills() {
     <section className="mb-16" id="tech">
       <FadeIn>
         <h2 className="text-2xl font-bold text-slate-900 mb-4 pb-3 border-b border-slate-200">
-          Technical Arsenal
+          Technical Knowledge
         </h2>
       </FadeIn>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

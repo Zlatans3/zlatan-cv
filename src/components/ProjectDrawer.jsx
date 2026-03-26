@@ -8,10 +8,19 @@ export default function ProjectDrawer({ project, open, onClose }) {
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 bg-black/40 z-40" />
         <Drawer.Content className="fixed bottom-0 left-0 right-0 z-50 flex justify-center">
-          <div className="w-full max-w-2xl flex flex-col rounded-t-2xl bg-white max-h-[90vh]">
-          {/* Drag handle */}
-          <div className="flex justify-center pt-3 pb-2 flex-shrink-0">
+          <div className="w-full max-w-2xl flex flex-col rounded-t-2xl bg-white max-h-[90dvh]">
+          {/* Drag handle + close */}
+          <div className="flex items-center justify-between flex-shrink-0 pt-3 px-4 pb-2">
+            <div className="w-8" />
             <div className="w-10 h-1 rounded-full bg-slate-300" />
+            <button
+              onClick={onClose}
+              className="w-7 h-7 flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 transition-colors text-slate-500"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 6 6 18M6 6l12 12"/>
+              </svg>
+            </button>
           </div>
 
           <div className="overflow-y-auto px-6 pb-10">

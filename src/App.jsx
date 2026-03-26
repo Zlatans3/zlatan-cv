@@ -1,4 +1,29 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation, useNavigationType } from 'react-router-dom'
+import { useEffect } from 'react'
+
+function ScrollManager() {
+  const { key } = useLocation()
+  const navType = useNavigationType()
+
+  // Continuously save scroll position for this history entry
+  useEffect(() => {
+    const save = () => sessionStorage.setItem(`scroll:${key}`, window.scrollY)
+    window.addEventListener('scroll', save, { passive: true })
+    return () => window.removeEventListener('scroll', save)
+  }, [key])
+
+  // On navigation: restore saved position (back) or reset to top (forward)
+  useEffect(() => {
+    if (navType === 'POP') {
+      const saved = sessionStorage.getItem(`scroll:${key}`)
+      window.scrollTo(0, saved ? parseInt(saved, 10) : 0)
+    } else {
+      window.scrollTo(0, 0)
+    }
+  }, [key, navType])
+
+  return null
+}
 import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
@@ -26,9 +51,12 @@ function Home() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<AllProjects />} />
-    </Routes>
+    <>
+      <ScrollManager />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<AllProjects />} />
+      </Routes>
+    </>
   )
 }
